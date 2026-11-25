@@ -20,6 +20,13 @@ M.palettes = {
     navy = "#6688bb", rust = "#b87457", red = "#ff5f5f", blood = "#5f0000",
     cloud = { "#446644", "#66cccc", "#9988dd", "#88ff88", "#aaff66" },
   },
+  -- paper: tema chiaro (gruppi in lua/paper.lua). Qui "white" = inchiostro più scuro,
+  -- così barra in basso e schermata iniziale restano leggibili sul fondo chiaro.
+  paper = {
+    bg = "#F4F3EF", bg1 = "#EAE8E2", bg2 = "#EAE8E2", bg3 = "#DDDAD2",
+    g1 = "#B5B2AA", g2 = "#8A8A8A", g3 = "#555555", g4 = "#3A3A3A",
+    fg = "#2B2B2B", white = "#1E1E1E",
+  },
 }
 
 function M.load(name)

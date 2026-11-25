@@ -48,4 +48,24 @@ return {
     "color4 #88aaff", "color12 #6688bb", "color5 #9988dd", "color13 #9988dd",
     "color6 #66cccc", "color14 #aacccc", "color7 #ccffa9", "color15 #ffffff",
   },
+  paper = {
+    -- JetBrains Mono (versione NL = senza legature); se manca kitty ripiega da solo su un altro monospace
+    "font_family      JetBrainsMonoNL Nerd Font Mono",
+    "bold_font        auto",
+    "italic_font      auto",
+    "bold_italic_font auto",
+    "font_size        14.0",
+    "modify_font cell_width 100%",
+    "modify_font cell_height 115%",   -- interlinea ~1.15
+    "disable_ligatures always",
+    "text_composition_strategy platform",
+    "cursor_shape beam",
+    "cursor_blink_interval 0",
+    "cursor #1E1E1E", "cursor_text_color #F4F3EF",
+    "selection_background #DDDAD2", "selection_foreground none",
+    "color0 #1E1E1E", "color8 #8A8A8A", "color1 #3A3A3A", "color9 #1E1E1E",
+    "color2 #3A3A3A", "color10 #1E1E1E", "color3 #555555", "color11 #3A3A3A",
+    "color4 #3A3A3A", "color12 #1E1E1E", "color5 #555555", "color13 #3A3A3A",
+    "color6 #555555", "color14 #3A3A3A", "color7 #DDDAD2", "color15 #F4F3EF",
+  },
 }

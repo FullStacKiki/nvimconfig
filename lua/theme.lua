@@ -4,7 +4,7 @@ local M = {}
 local SAVE = vim.fn.stdpath("state") .. "/colorscheme"
 local KITTY = vim.fn.expand("~/.config/kitty/nvim-theme.conf")
 local DEFAULT = "tokyonight-storm"
-local FAVORITES = { "tokyonight-storm", "tokyonight-night", "tokyonight-moon", "tokyonight-day", "mrrobot", "phosphor" }
+local FAVORITES = { "tokyonight-storm", "tokyonight-night", "tokyonight-moon", "tokyonight-day", "mrrobot", "phosphor", "paper" }
 
 -- impostazioni extra di kitty per tema: in kitty_themes.lua, riletto ogni volta
 local EXTRA_FILE = vim.fn.stdpath("config") .. "/lua/kitty_themes.lua"
@@ -45,7 +45,7 @@ function M.apply(name, save)
   local mono = require("mono").palettes[name] ~= nil
   devicons(not mono)
   -- mrrobot/phosphor: cursore a blocco che lampeggia anche dentro nvim; gli altri temi tornano al normale
-  vim.o.guicursor = mono and "a:block-blinkwait300-blinkon500-blinkoff500"
+  vim.o.guicursor = (mono and name ~= "paper") and "a:block-blinkwait300-blinkon500-blinkoff500"
     or vim.api.nvim_get_option_info2("guicursor", {}).default
   if save then
     vim.fn.writefile({ name }, SAVE)
