@@ -49,12 +49,12 @@ return {
     "color6 #66cccc", "color14 #aacccc", "color7 #ccffa9", "color15 #ffffff",
   },
   paper = {
-    -- JetBrains Mono (versione NL = senza legature); se manca kitty ripiega da solo su un altro monospace
-    "font_family      JetBrainsMonoNL Nerd Font Mono",
+    -- Comic Shanns Mono (alternativa gratuita a Comic Code, che è a pagamento). Prima: JetBrainsMonoNL Nerd Font Mono a 14
+    "font_family      ComicShannsMono Nerd Font Mono",
     "bold_font        auto",
     "italic_font      auto",
     "bold_italic_font auto",
-    "font_size        14.0",
+    "font_size        16.5",
     "modify_font cell_width 100%",
     "modify_font cell_height 115%",   -- interlinea ~1.15
     "disable_ligatures always",
